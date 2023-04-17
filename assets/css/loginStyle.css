@@ -7,6 +7,14 @@ body{
     margin: 0;
     padding: 0;
 }
+.colorBody{
+    color: lightblue;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.colorBody:hover{
+    text-decoration: underline;
+}
 span{
     font-weight: bold;
     color: aquamarine;

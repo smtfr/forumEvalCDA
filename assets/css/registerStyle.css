@@ -52,6 +52,15 @@ header{
     border-bottom: solid 2px rgb(187, 233, 233);
     margin-top : 3rem;
 }
+.colorBody{
+    color: lightblue;
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+}
+.colorBody:hover{
+    text-decoration: underline;
+}
 input{
     width: 65%;
     border: 0;
@@ -81,6 +90,10 @@ input{
     text-decoration: underline;
 }
 form{
-    height: 83vh;
-    margin-bottom: 3rem;
+    height: 89vh;
+}
+#pwNoMatch{
+    display: none;
+    color: white;
+    text-decoration: underline;
 }

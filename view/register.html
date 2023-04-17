@@ -13,7 +13,7 @@
     <header>
         <div class="flex justifyEvenly boxLinks">
             <a href="../index.html" class="linkHeader">Accueil</a>
-            <a href="#" class="linkHeader">Fourm</a>
+            <a href="./forum.html" class="linkHeader">Fourm</a>
             <a href="./login.html" class="linkHeader">Login</a>
         </div>
     </header>
@@ -31,39 +31,43 @@
                 <div class="row">
                     <label for="nom" class="col-2 my2">Nom</label>
                     <div class="col-4"></div>
-                    <input type="text" name="nom" id="nom" placeholder="Elden" class="col-6 my2">
+                    <input type="text" name="nom" id="nom" placeholder="Elden" class="col-6 my2" required>
                 </div>
                 <div class="row">
                     <label for="prenom" class="col-2 my2">Prenom</label>
                     <div class="col-4"></div>
-                    <input type="text" name="prenom" id="prenom" placeholder="John" class="col-6 my2">
+                    <input type="text" name="prenom" id="prenom" placeholder="John" class="col-6 my2" required>
                 </div>
                 <div class="row">
                     <label for="email" class="col-2 my2">Adresse email</label>
                     <div class="col-4"></div>
-                    <input type="email" name="email" id="email" placeholder="johnelden@landsbetween.go" class="col-6 my2">
+                    <input type="email" name="email" id="email" placeholder="johnelden@landsbetween.go" class="col-6 my2" required>
                 </div>
                 <div class="row">
                     <label for="password" class="col-2 my2">Mot de passe</label>
                     <div class="col-4"></div>
-                    <input type="password" name="password" id="password" class="col-6 my2">
+                    <input type="password" name="password" id="password" class="col-6 my2" required>
                 </div>
                 <div class="row">
                     <label for="confirmPw" class="col-2 my2">Confirmez le MDP</label>
                     <div class="col-4"></div>
-                    <input type="password" name="confirmPw" id="confirmPw" class="col-6 my2">
+                    <input type="password" name="confirmPw" id="confirmPw" class="col-6 my2" required>
                 </div>
-
+                    <p id="pwNoMatch">Il y a des erreurs dans le formulaire, veuillez recommencer. </p>
                 <div class="row">
                     <div class="col-4"></div>
-                    <button type="submit" id="btnCreerCompte" class="col-4">Créer le compte</button>
+                    <button type="submit" id="btnCreerCompte" class="col-4" onclick="recupRegister()">Créer le compte</button>
                     <div class="col-4"></div>
                 </div>
             </form>
+            <div class="flex justifyCenter">
+                <a href="./login.html" class="colorBody">Déjà un compte ?</a>
+            </div>
         </div>
     </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="../assets/js/recupRegister.js"></script>
 </body>
 </html>
