@@ -1,0 +1,81 @@
+body{
+    background-color: #2b2b2b;
+    color: lightblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+span{
+    font-weight: bold;
+    color: aquamarine;
+}
+.flex{
+    display: flex;
+}
+.justifyAround{
+    justify-content: space-around;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
+}
+.dirCol{
+    flex-direction: column;
+}
+.imgRegister{
+    border-radius: 0.5rem
+}
+header{
+    background-color: darkslategrey;
+    color: antiquewhite;
+    height: 100px;
+    width: 100%;
+}
+.boxLinks{
+    height: 100px;
+}
+.linkHeader{
+    color: antiquewhite;
+    text-decoration: none;
+    align-self: center;
+}
+.selfCenter{
+    align-self: center;
+}
+.linkHeader:hover{
+    text-decoration: underline;
+}
+.borderFF{
+    border-top: solid 2px rgb(187, 233, 233);
+    border-bottom: solid 2px rgb(187, 233, 233);
+    margin-top : 3rem;
+}
+input{
+    width: 65%;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    height: 40px;
+    margin: 5rem 0 0 5rem;
+    color: #2b2b2b;
+}
+.my2{
+    margin-top: 2rem;
+}
+.w100{
+    width: 100%;
+}
+#btnCreerCompte{
+    margin: 3rem 0 3rem 0;
+    border: 0;
+    background-color: darkblue;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+    height: 45px;
+    color: white;
+}
+#btnCreerCompte:hover{
+    background-color: dodgerblue;
+    text-decoration: underline;
+}
