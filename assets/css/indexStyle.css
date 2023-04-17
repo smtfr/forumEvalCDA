@@ -16,7 +16,7 @@ body{
     background-color: #2b2b2b;
     color: lightblue;
     font-family: "Roboto", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
 }
 span{
@@ -26,12 +26,40 @@ span{
 .flex{
     display: flex;
 }
-.justifyAround{
-    justify-content: space-around;
+.justifyBetween{
+    justify-content: space-between;
 }
-header.leToutHaut{
+.leToutHaut{
     background-color: cadetblue;
     color: aliceblue;
+    height: 25px;
+}
+header{
+    background-color: darkslategrey;
+    color: antiquewhite;
+    height: 125px;
+    width: 100%;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+}
+.boxLinks{
+    height: 100px;
+}
+.linkHeader{
+    color: antiquewhite;
+    text-decoration: none;
+    align-self: center;
+}
+.linkHeader:hover{
+    text-decoration: underline;
+}
+#dateCoHeader{
+    margin-right: 1rem;
+}
+.ml1{
+    margin-left: 1rem;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
 }
 .borderFF{
     border-top: solid 2px rgb(187, 233, 233);

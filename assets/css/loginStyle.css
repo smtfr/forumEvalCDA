@@ -14,6 +14,9 @@ span{
 .flex{
     display: flex;
 }
+form{
+    height: 80vh;
+}
 .justifyAround{
     justify-content: space-around;
 }
@@ -22,9 +25,6 @@ span{
 }
 .dirCol{
     flex-direction: column;
-}
-.imgRegister{
-    border-radius: 3rem;
 }
 header{
     background-color: darkslategrey;
@@ -64,10 +64,20 @@ input{
 .my2{
     margin-top: 2rem;
 }
+.my4{
+    margin-top: 6rem;
+}
 .w100{
     width: 100%;
 }
-#btnCreerCompte{
+.imgLogin{
+    margin-top: 5rem;
+    border-radius: 3rem;
+}
+.ml1{
+    margin-left: 1rem;
+}
+#btnLogin{
     margin: 3rem 0 3rem 0;
     border: 0;
     background-color: darkblue;
@@ -76,11 +86,7 @@ input{
     height: 45px;
     color: white;
 }
-#btnCreerCompte:hover{
+#btnLogin:hover{
     background-color: dodgerblue;
     text-decoration: underline;
-}
-form{
-    height: 83vh;
-    margin-bottom: 3rem;
 }
