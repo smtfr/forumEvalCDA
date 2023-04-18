@@ -1,7 +1,6 @@
 function creerSujet(){
     var user=localStorage.getItem('données utilisateur');
     var User = JSON.parse(user);
-    var tBody = document.getElementById('tBody');
     var auteur = `${User.prenom} ${User.nom}`;
     var sujet = prompt('De quel sujet voulez vous parler ?');
     var hour = new Date().getHours();
@@ -28,9 +27,18 @@ if (mois < 10){
     mois = mois+1
 }
 var annee = new Date().getFullYear();
+var fullDate = `${jour}/${mois}/${annee}`;
+    // var idSujet = `${jour}${hour}${minutes}${seconds}`
+const ObjSujet ={
+        auteur              : auteur,
+        dateDePublication   : fullDate,
+        heureDePublication  : heureSujet,
+        sujet               : sujet
+    }
 
     const node = document.createElement("tr");
-    node.innerHTML= `<td>${auteur}</td><td>${sujet}</td><td>Le ${jour}/${mois}/${annee} à ${heureSujet}</td>`;
+    node.innerHTML= `<td onclick='pageSujet()'>${auteur}</td><td onclick='pageSujet()'>${sujet}</td><td onclick='pageSujet()'>Le ${fullDate} à ${heureSujet}</td>`;
     document.getElementById('tBody').appendChild(node);
+    dataSujet= localStorage.setItem(`donnees sujet`,JSON.stringify(ObjSujet));
 
 }
