@@ -11,29 +11,27 @@
 <body>
 
     <header>
-        <div class="leToutHaut">
-            <div class="flex justifyBetween">
-                <div>
-                    <p class="ml1">Bienvenue, 
-                        <span id="nomHeader">
-    
-                        </span>
-                    </p>
-                </div>
-                <div>
-                    <p>Nous sommes le 
-                        <span id="dateHeader">
-    
-                        </span>
-                    </p>
-                </div>
-                <div>
-                    <p>Vous vous êtes connecté à 
-                        <span id="dateCoHeader">
-    
-                        </span>
-                    </p>
-                </div>
+        <div class="flex justifyBetween leToutHaut">
+            <div>
+                <p>Bienvenue, 
+                    <span id="nomHeader">
+
+                    </span>
+                </p>
+            </div>
+            <div>
+                <p>Nous sommes le 
+                    <span id="dateHeader">
+
+                    </span>
+                </p>
+            </div>
+            <div>
+                <p>Vous vous êtes connecté à 
+                    <span id="dateCoHeader">
+
+                    </span>
+                </p>
             </div>
         </div>
         <div class="flex justifyEvenly boxLinks">
@@ -54,21 +52,27 @@
                 <img src="../assets/img/fourmeCard.jpg" alt="Fourme" class="imgCard">
             </div>
             <p class="ml1 my2">La <span>Fourme</span>, Le Fromage des Dieux</p>
-            <button id="goToFourme">Parlez-en !</button>
+            <a href="fromage.html">
+                <button class="btnCard">Parlez-en !</button>
+            </a>
         </div>
         <div class="card">
             <div class="flex justifyCenter">
                 <img src="../assets/img/loreOuFromageCard.jpg" alt="Fourme" class="imgCard">
             </div>
             <p class="ml1 my2"><span>Lore</span> ou <span>Fromage</span>, peu importe.</p>
-            <button id="goToLore">Parlez-en !</button>
+            <a href="loreFromage.html">
+                <button class="btnCard">Parlez-en !</button>
+            </a>
         </div>
         <div class="card">
             <div class="flex justifyCenter">
                 <img src="../assets/img/eldenRingCard.jpg" alt="Elden Ring" class="imgCard">
             </div>
             <p class="ml1 my2"><span>ELDEN RING</span>, GOTY 2022</p>
-            <button id="goToFeur">Parlez-en !</button>
+            <a href="lore.html">
+                <button class="btnCard">Parlez-en !</button>
+            </a>
         </div>
     </div>
 
@@ -78,6 +82,7 @@
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-
+    <script src="../assets/js/headerInfos.js"></script>
+    <script src="../assets/js/loginCheck.js"></script>
 </body>
 </html>

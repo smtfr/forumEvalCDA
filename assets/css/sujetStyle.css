@@ -1,17 +1,3 @@
-
-#goToLogin, #goToRegister{
-    border: 0;
-    background-color: darkblue;
-    border-radius: 0.5rem;
-    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
-    height: 45px;
-    color: white;
-    width: 100%;
-}
-#goToLogin:hover, #goToRegister:hover{
-    background-color: dodgerblue;
-    text-decoration: underline;
-}
 body{
     background-color: #2b2b2b;
     color: lightblue;
@@ -20,6 +6,7 @@ body{
     font-size: 16px;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 span{
     font-weight: bold;
@@ -28,13 +15,22 @@ span{
 .flex{
     display: flex;
 }
+.p0{
+    margin: 0;
+}
 .justifyBetween{
     justify-content: space-between;
+}
+.justifyCenter{
+    justify-content: center;
 }
 .leToutHaut{
     background-color: cadetblue;
     color: aliceblue;
     height: 25px;
+}
+.leftMost{
+    margin-left: 1rem;
 }
 header{
     background-color: darkslategrey;
@@ -60,8 +56,8 @@ header{
 #dateCoHeader{
     margin-right: 1rem;
 }
-.ml1{
-    margin-left: 1rem;
+.w100{
+    width: 100%;
 }
 .justifyEvenly{
     justify-content: space-evenly;
@@ -71,10 +67,34 @@ header{
     border-bottom: solid 2px rgb(187, 233, 233);
     padding: 3rem 0 3rem 0;
 }
-.p50 {
-    padding: 30px 0 30px 0;
-    margin: 3rem 0 3rem 0;
+table{
+    width: 90%;
+    margin-top: 2rem;
+    border: solid 2px snow;
 }
-.w100{
+td {
+    width: 33%; 
+    border: rgb(230, 189, 173) 1px solid;
+    padding: 0.5rem;
+}
+tbody{
+    background-color: cadetblue;
+    color: antiquewhite;
+}
+thead{
+    background-color:rgb(17, 70, 70);
+    color: cyan;
+}
+.btnSujet{
+    border: 0;
+    background-color: darkblue;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+    height: 45px;
+    color: white;
     width: 100%;
+}
+.btnSujet:hover{
+    background-color: dodgerblue;
+    text-decoration: underline;
 }
