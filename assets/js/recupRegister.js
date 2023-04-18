@@ -14,30 +14,6 @@ function recupRegister(){
     var email = document.getElementById('email').value;
     var nom = document.getElementById('nom').value;
     var prenom = document.getElementById('prenom').value;
-    // var jour = new Date().getDate();
-    // if (jour < 10){
-    //     jour = `0${jour}`
-    // }
-    // var mois = new Date().getMonth();
-    // if (mois < 10 ){
-    //     mois = `0${mois+1}`
-    // } else {
-    //     mois = mois+1
-    // }
-    // var annee = new Date().getFullYear();
-    var heure = new Date().getHours();
-    if (heure < 10){
-        heure = `0${heure}`
-    }
-    var minutes = new Date().getMinutes();
-    if (minutes < 10){
-        minutes = `0${minutes}`
-    }
-    var secondes = new Date().getSeconds();
-    if (secondes < 10){
-        secondes = `0${secondes}`
-    }
-
     const User = {
         adresseMail     : email,
         nom             : nom,
@@ -61,6 +37,5 @@ function recupRegister(){
         event.preventDefault();
         document.getElementById('emailCheck').style.display='block';
     }
-// dataUser= localStorage.setItem('données utilisateur',JSON.stringify(User));
-    }
+}
 
