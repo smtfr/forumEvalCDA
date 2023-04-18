@@ -90,9 +90,24 @@ input{
     text-decoration: underline;
 }
 form{
-    height: 89vh;
+    height: 92vh;
 }
 #pwNoMatch{
+    display: none;
+    color: white;
+    text-decoration: underline;
+}
+#nomLettreCheck{
+    display: none;
+    color: white;
+    text-decoration: underline;
+}
+#prenomLettreCheck{
+    display: none;
+    color: white;
+    text-decoration: underline;
+}
+#emailCheck{
     display: none;
     color: white;
     text-decoration: underline;

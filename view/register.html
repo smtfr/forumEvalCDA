@@ -32,20 +32,22 @@
                     <label for="nom" class="col-2 my2">Nom</label>
                     <div class="col-4"></div>
                     <input type="text" name="nom" id="nom" placeholder="Elden" class="col-6 my2" required>
+                    <p id="nomLettreCheck">Votre nom ne peut contenir que des lettres.</p>
                 </div>
                 <div class="row">
                     <label for="prenom" class="col-2 my2">Prenom</label>
                     <div class="col-4"></div>
                     <input type="text" name="prenom" id="prenom" placeholder="John" class="col-6 my2" required>
+                    <p id="prenomLettreCheck">Votre prenom ne peut contenir que des lettres.</p>
                 </div>
                 <div class="row">
                     <label for="email" class="col-2 my2">Adresse email</label>
                     <div class="col-4"></div>
                     <input type="email" name="email" id="email" placeholder="johnelden@landsbetween.go" class="col-6 my2" required>
+                    <p id="emailCheck">Ce n'est pas une adresse mail valide.</p>
                 </div>
                 <div class="row">
-                    <label for="password" class="col-2 my2">Mot de passe</label>
-                    <div class="col-4"></div>
+                    <label for="password" class="col-6 my2">Mot de passe (doit contenir au moins 8 caractères, dont une lettre minuscule et une lettre majuscule, au moins un chiffre et un caractère spécial)</label>
                     <input type="password" name="password" id="password" class="col-6 my2" required>
                 </div>
                 <div class="row">
@@ -53,7 +55,7 @@
                     <div class="col-4"></div>
                     <input type="password" name="confirmPw" id="confirmPw" class="col-6 my2" required>
                 </div>
-                    <p id="pwNoMatch">Il y a des erreurs dans le formulaire, veuillez recommencer. </p>
+                    <p id="pwNoMatch">Les mots de passes ne correspondent pas.</p>
                 <div class="row">
                     <div class="col-4"></div>
                     <button type="submit" id="btnCreerCompte" class="col-4" onclick="recupRegister()">Créer le compte</button>
