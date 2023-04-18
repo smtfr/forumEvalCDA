@@ -18,7 +18,8 @@ function recupRegister(){
         adresseMail     : email,
         nom             : nom,
         prenom          : prenom,
-        motDePasse      : password
+        motDePasse      : password,
+        heureDeCo       : "",
     }// on crée l'objet User
     // on passe à la vérification des champs
 

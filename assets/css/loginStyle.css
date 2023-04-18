@@ -98,3 +98,8 @@ input{
     background-color: dodgerblue;
     text-decoration: underline;
 }
+#pasCoPossible{
+    display: none;
+    color: white;
+    text-decoration: underline;
+}
