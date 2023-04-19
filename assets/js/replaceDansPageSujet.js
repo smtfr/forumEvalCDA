@@ -1,13 +1,12 @@
 var sujet=localStorage.getItem(`donnees sujet`);
 var Sujet = JSON.parse(sujet);
-
-var sujetAuteur = document.getElementById('sujetAuteur');
-var heureSujet = document.getElementById('sujetHeureDate');
 var sujetContent = document.getElementById('sujetContent');
+var sujetAuteur = document.getElementById('sujetAuteur');
+var sujetHeureDate = document.getElementById('sujetHeureDate');
 
+sujetContent.innerText=`${Sujet.sujet}`;
 sujetAuteur.innerText=`${Sujet.auteur}`;
-heureSujet.innerText=`${Sujet.dateDePublication} à ${Sujet.heureDePublication}`;
-sujetContent.innerText = `${Sujet.sujet}`;
+sujetHeureDate.innerText=`Le ${Sujet.dateDePublication} à ${Sujet.heureDePublication}`
 
 function addComm(){
     var hour = new Date().getHours();
@@ -42,14 +41,11 @@ var commContent= prompt();
     var User = JSON.parse(user);
     const Comm = {
         contenu     : commContent,
-        auteurComm  : localStorage.getItem(User.auteur),
+        auteurComm  : User.prenom,
         heureComm   : fullHeure,
         jourComm    : fullDate
     }
-    var auteurComm = document.getElementById('auteurComm');
-    auteurComm.innerText=`${Comm.auteurComm}`;
-    var hourCommentaire = document.getElementById('heureComm');
-    hourCommentaire.innerText= `Le ${Comm.fullDate} à ${Comm.fullHeure}`
-    var contentComm= document.getElementById('contentComm');
-    contentComm.innerText=`${Comm.contenu}`
+    const node = document.createElement("p");
+    node.innerHTML= `<p class='boxComm'>${Comm.contenu}<div class='flex justifyCenter'> Par <span> ${Comm.auteurComm} </span> <br> à <span> <br>${Comm.heureComm}  </span></div></p>`;
+    document.querySelector('.containerComms').appendChild(node);
 }
