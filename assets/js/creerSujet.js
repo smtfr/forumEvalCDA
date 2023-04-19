@@ -1,8 +1,14 @@
+var user=localStorage.getItem('données utilisateur');
+var User = JSON.parse(user);
+
 function creerSujet(){
-    var user=localStorage.getItem('données utilisateur');
-    var User = JSON.parse(user);
+    var form = document.querySelector('.formSujet');
+    form.style.display='block';
+
+}
+function sendSujet(){
     var auteur = `${User.prenom} ${User.nom}`;
-    var sujet = prompt('De quel sujet voulez vous parler ?');
+    var sujet = document.getElementById('sujet').value;
     var hour = new Date().getHours();
     if (hour < 10){
         hour = `0${hour}`
@@ -28,17 +34,22 @@ if (mois < 10){
 }
 var annee = new Date().getFullYear();
 var fullDate = `${jour}/${mois}/${annee}`;
-    // var idSujet = `${jour}${hour}${minutes}${seconds}`
-const ObjSujet ={
+    var idSujet = `${jour}${hour}${minutes}${seconds}`;
+    const ObjSujet ={
         auteur              : auteur,
         dateDePublication   : fullDate,
         heureDePublication  : heureSujet,
-        sujet               : sujet
+        sujet               : sujet,
+        id                  : idSujet
     }
-
+    
     const node = document.createElement("tr");
-    node.innerHTML= `<td onclick='pageSujet()'>${auteur}</td><td onclick='pageSujet()'>${sujet}</td><td onclick='pageSujet()'>Le ${fullDate} à ${heureSujet}</td>`;
+    node.innerHTML= `<td onclick='pageSujet()'>${ObjSujet.auteur}</td><td onclick='pageSujet()'>${ObjSujet.sujet}</td><td onclick='pageSujet()'>Le ${ObjSujet.dateDePublication} à ${ObjSujet.heureDePublication}</td>`;
     document.getElementById('tBody').appendChild(node);
     dataSujet= localStorage.setItem(`donnees sujet`,JSON.stringify(ObjSujet));
+
+    var form = document.querySelector('.formSujet');
+    form.style.display='none';
+    
 
 }
