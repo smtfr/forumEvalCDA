@@ -7,6 +7,7 @@ function creerSujet(){
 
 }
 function sendSujet(){
+    event.preventDefault();
     var auteur = `${User.prenom} ${User.nom}`;
     var sujet = document.getElementById('sujet').value;
     var hour = new Date().getHours();
@@ -43,6 +44,7 @@ var fullDate = `${jour}/${mois}/${annee}`;
         id                  : idSujet
     }
     
+
     const node = document.createElement("tr");
     node.innerHTML= `<td onclick='pageSujet()'>${ObjSujet.auteur}</td><td onclick='pageSujet()'>${ObjSujet.sujet}</td><td onclick='pageSujet()'>Le ${ObjSujet.dateDePublication} à ${ObjSujet.heureDePublication}</td>`;
     document.getElementById('tBody').appendChild(node);
