@@ -26,10 +26,16 @@ Ce repo est le résultat d'une semaine de travail pour une évaluation de CDA. L
 
 ![UML USE CASE Muller Simon](https://user-images.githubusercontent.com/122968403/233645678-b3ef83ac-9363-4afd-9981-dcf29baa2c96.png)
 
+Ici, le forum est assez simple, j'ai donc décidé de ne pas prendre en compte la possibilité d'avoir un admin, car ce n'était pas demandé. Assez simple avec peu de feature.
+
 
 ![UML CLASSES](https://user-images.githubusercontent.com/122968403/233645504-7eee619e-45f3-47e8-af46-2aea377fc13f.png)
 
+Ici, nous faisons rapidement le tour des classes, il n'y a qu'un seul acteur, le User, qui post des commentaires et des sujets.
+
 ![UML ACTVITE login Muller Simon](https://user-images.githubusercontent.com/122968403/233645607-2c7d4840-2c9c-4243-8cb0-a9de75faf64b.png)
+
+Le login est simple, classique, avec une vérification des données plus complexes faites en register. Ici on check juste si les infos tapées sont présentes dans le localStorage().
 
 ## Code
 
