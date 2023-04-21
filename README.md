@@ -1,7 +1,7 @@
 
 # eval forum CDA
 
-Ce repo est le résultat d'une semaine de travail pour une évaluation de CDA.
+Ce repo est le résultat d'une semaine de travail pour une évaluation de CDA. Le but était de nous tester sur tout ce qu'on a travaillé depuis le début de la formation (de la conception jusqu'au JS en passant par l'HTML et le CSS)
 ## Table des matières
 
 1 - L'arborescence
@@ -36,6 +36,6 @@ Ce repo est le résultat d'une semaine de travail pour une évaluation de CDA.
 
 Langage principalement utilisé : 
 Javascript,
-il s'agit d'un forum, géré principalement en localStorage() et sans base de données.
+il s'agit d'un forum, géré en localStorage() et sans base de données, donc sans persistence des données.
 
 @author Simon Muller
