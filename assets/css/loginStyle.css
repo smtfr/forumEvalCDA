@@ -1,0 +1,105 @@
+body{
+    background-color: #2b2b2b;
+    color: lightblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+.colorBody{
+    color: lightblue;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+.colorBody:hover{
+    text-decoration: underline;
+}
+span{
+    font-weight: bold;
+    color: aquamarine;
+}
+.flex{
+    display: flex;
+}
+form{
+    height: 80vh;
+}
+.justifyAround{
+    justify-content: space-around;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
+}
+.dirCol{
+    flex-direction: column;
+}
+header{
+    background-color: darkslategrey;
+    color: antiquewhite;
+    height: 100px;
+    width: 100%;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+}
+.boxLinks{
+    height: 100px;
+}
+.linkHeader{
+    color: antiquewhite;
+    text-decoration: none;
+    align-self: center;
+}
+.selfCenter{
+    align-self: center;
+}
+.linkHeader:hover{
+    text-decoration: underline;
+}
+.borderFF{
+    border-top: solid 2px rgb(187, 233, 233);
+    border-bottom: solid 2px rgb(187, 233, 233);
+    margin-top : 3rem;
+}
+input{
+    width: 65%;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    height: 40px;
+    margin: 5rem 0 0 5rem;
+    color: #2b2b2b;
+}
+.my2{
+    margin-top: 2rem;
+}
+.my4{
+    margin-top: 6rem;
+}
+.w100{
+    width: 100%;
+}
+.imgLogin{
+    margin-top: 5rem;
+    border-radius: 3rem;
+}
+.ml1{
+    margin-left: 1rem;
+}
+#btnLogin{
+    margin: 3rem 0 3rem 0;
+    border: 0;
+    background-color: darkblue;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+    height: 45px;
+    color: white;
+}
+#btnLogin:hover{
+    background-color: dodgerblue;
+    text-decoration: underline;
+}
+#pasCoPossible{
+    display: none;
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,121 @@
+body{
+    background-color: #2b2b2b;
+    color: lightblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+span{
+    font-weight: bold;
+    color: aquamarine;
+}
+#sujetContent{
+    background-color: #353535;
+    min-width: 500px;
+    min-height: 350px;
+    color: white;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+.boxComm{
+    background-color: darkcyan;
+    color: white;
+    min-height: 150px;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.boxComm> span{
+    text-decoration: underline;
+}
+.containerComms{
+    width: 90%;
+    background-color: #353535;
+}
+
+.flex{
+    display: flex;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+.justifyCenter{
+    justify-content: center;
+}
+.leToutHaut{
+    background-color: cadetblue;
+    color: aliceblue;
+    height: 25px;
+}
+header{
+    background-color: darkslategrey;
+    color: antiquewhite;
+    height: 125px;
+    width: 100%;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+}
+.boxLinks{
+    height: 100px;
+}
+.my2{
+    margin-top: 2rem;
+}
+.linkHeader{
+    color: antiquewhite;
+    text-decoration: none;
+    align-self: center;
+}
+.linkHeader:hover{
+    text-decoration: underline;
+}
+#dateCoHeader{
+    margin-right: 1rem;
+}
+.ml1{
+    margin-left: 1rem;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
+}
+.borderFF{
+    border-top: solid 2px rgb(187, 233, 233);
+    border-bottom: solid 2px rgb(187, 233, 233);
+    padding: 3rem 0 3rem 0;
+}
+.container{
+    width: 90%;
+    color: white;
+    background-color: dimgray;
+    border-radius: 1rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem darkslategrey);
+    display: flex;
+    justify-content: center;
+}
+.containerSujet{
+    width: 98vw;
+    color: white;
+    background-color: midnightblue;
+    border-radius: 1rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem darkslategrey);
+    margin: 2rem 0 2rem 0;
+}
+.commentaire{
+    width: 850px;
+    border: solid 1px #2b2b2b;
+}
+#addComm{
+    margin: 3rem 0 3rem 0;
+    border: 0;
+    background-color: darkblue;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+    height: 45px;
+    color: white;
+}
+#addComm:hover{
+    background-color: dodgerblue;
+    text-decoration: underline;
+}

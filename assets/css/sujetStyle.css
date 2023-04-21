@@ -1,0 +1,117 @@
+body{
+    background-color: #2b2b2b;
+    color: lightblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+span{
+    font-weight: bold;
+    color: aquamarine;
+}
+.flex{
+    display: flex;
+}
+.p0{
+    margin: 0;
+}
+.justifyBetween{
+    justify-content: space-between;
+}
+.justifyCenter{
+    justify-content: center;
+}
+.leToutHaut{
+    background-color: cadetblue;
+    color: aliceblue;
+    height: 25px;
+}
+.leftMost{
+    margin-left: 1rem;
+}
+header{
+    background-color: darkslategrey;
+    color: antiquewhite;
+    height: 125px;
+    width: 100%;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+}
+.boxLinks{
+    height: 100px;
+}
+.my2{
+    margin-top: 2rem;
+}
+input{
+    width: 65%;
+    border: 0;
+    border-radius: 0.5rem;
+    background-color: blanchedalmond;
+    height: 40px;
+    margin: 5rem 0 0 5rem;
+    color: #2b2b2b;
+}
+.linkHeader{
+    color: antiquewhite;
+    text-decoration: none;
+    align-self: center;
+}
+.linkHeader:hover{
+    text-decoration: underline;
+}
+#dateCoHeader{
+    margin-right: 1rem;
+}
+.w100{
+    width: 100%;
+}
+.justifyEvenly{
+    justify-content: space-evenly;
+}
+.borderFF{
+    border-top: solid 2px rgb(187, 233, 233);
+    border-bottom: solid 2px rgb(187, 233, 233);
+    padding: 3rem 0 3rem 0;
+}
+table{
+    width: 90%;
+    margin-top: 2rem;
+    border: solid 2px snow;
+}
+td {
+    width: 33%; 
+    border: rgb(230, 189, 173) 1px solid;
+    padding: 0.5rem;
+}
+tbody{
+    background-color: cadetblue;
+    color: antiquewhite;
+}
+thead{
+    background-color:rgb(17, 70, 70);
+    color: cyan;
+}
+.btnSujet{
+    border: 0;
+    background-color: darkblue;
+    border-radius: 0.5rem;
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem cadetblue);
+    height: 45px;
+    color: white;
+    width: 100%;
+}
+.formSujet{
+    border-radius: 1rem;
+    color: snow;
+    border: 1px dashed #2b2b2b;
+    display: none;
+    width: 100%;
+    height: 350px;
+}
+.btnSujet:hover{
+    background-color: dodgerblue;
+    text-decoration: underline;
+}
